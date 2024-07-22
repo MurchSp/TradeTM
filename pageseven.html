@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rent a Bot - Trade TM</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1 class="logo">
+            Trade TM 
+            <a href="index.html">
+                <img src="https://img.icons8.com/?size=96&amp;id=0BUscq2ZXA2j&amp;format=png" alt="Steam Icon" style="width: 30px;">
+            </a>
+        </h1>
+        <nav>
+            <a href="pagethree.html">Trade</a>
+            <a href="pagefour.html">History</a>
+            <a href="pagetwo.html">Rent a Bot</a>
+            <button class="login-btn">Login via Steam</button>
+        </nav>
+    </header>    
+    <div class="online-container">
+        Online: <span id="online-count">27</span>
+    </div>
+    <main>
+        <div class="create-ticket-container">
+            <button class="create-ticket-btn" onclick="openModal()">Create a ticket</button>
+        </div>
+        <!-- Content here -->
+    </main>
+    <footer>
+        <p class="copyright-text">Copyrights © 2024 TRADETM</p>
+        <nav>
+            <a href="pagefive.html">Terms</a>
+            <a href="pagesix.html">Privacy</a>
+            <a href="pageseven.html">Support</a>
+        </nav>
+    </footer>
+
+    <!-- Modal Window -->
+    <div id="ticketModal" class="modal">
+        <div class="modal-content">
+            <h2 class="modal-header">Creating a ticket</h2>
+            <label for="problemDescription">Describe the problem</label>
+            <textarea id="problemDescription" placeholder="Tell us about the problem"></textarea>
+            <button class="send-btn">Send</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

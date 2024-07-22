@@ -1,0 +1,583 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Kanit:wght@600&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+header .logo {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+nav {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px; /* Отступ между ссылками */
+    transition: color 0.3s; /* Плавное изменение цвета */
+}
+
+nav a:hover {
+    color: rgb(104, 102, 102); /* Цвет текста при наведении */
+}
+
+.login-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0px 4px 8px rgba(31, 198, 42, 0.25);
+}
+/* Стили для контейнера заголовков */
+.heading-container {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700; /* Bold */
+    margin-bottom: 20px;
+}
+
+/* Дополнительные стили для заголовков внутри контейнера */
+.heading-container h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+.heading-container h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.about h2 {
+    font-size: 2em;
+    text-align: left;
+}
+
+.intro-text {
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 20px;
+}
+
+.intro-text strong {
+    font-weight: bold;
+}
+
+.person-img {
+    flex: 0 0 30%; /* Задаем ширину для изображения */
+}
+
+.person-img img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px; /* Округляем углы изображения */
+}
+
+/* Добавляем новое правило для футера */
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left; /* Выравниваем текст по левому краю */
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    color: rgb(0, 0, 0); /* Черный цвет текста */
+    opacity: 0.9; /* Прозрачность */
+    font-family: Roboto Flex, ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji; /* Указанный шрифт */
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.copyright-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.intro-container {
+    background-color: #c5ee89;
+    padding: 17px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(96, 251, 113, 0.26);
+    margin-top: 23px;
+    text-align: left;
+}
+
+.intro-container p.intro-text {
+    margin-bottom: 0; /* Убираем лишний отступ снизу */
+}
+
+/* Новые стили для контейнера "Monthly plans" */
+.monthly-plans {
+    background: linear-gradient(#e2ecc8, #52843c4f);
+    padding: 1px;
+    border-radius: 19px;
+    margin: 20px auto;
+    max-width: 200px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    box-shadow: 0px 4px 8px rgba(53, 128, 58, 0.58)
+}
+
+/* Стили для секции "Rent a Bot" */
+.rent-a-bot {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rent-a-bot h2 {
+    font-size: 4em;
+}
+
+.plans-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.plan {
+    background-color: #ffcc00;
+    padding: 16px;
+    border-radius: 41px;
+    width: 23%;
+    text-align: left;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    box-shadow: 0px 4px 8px rgba(13, 12, 12, 0.62);
+}
+
+.plan h3 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.plan p {
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.plan ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.plan ul li {
+    margin-bottom: 10px;
+}
+
+.unavailable-btn {
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: not-allowed;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif; /* Используем шрифт Inter */
+    font-weight: 700; /* Делаем шрифт жирным */
+    border-radius: 7px
+}
+.instant-services {
+    font-size: 2em;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    margin-top: 20px; /* Пример отступа сверху */
+    text-align: center; /* Выравнивание текста по центру, если требуется */
+    color: #333; /* Цвет текста */
+}
+.trades {
+  background-color: #333;
+  color: #fff;
+  padding: 263px;
+  border-radius: 14px;
+  text-align: center;
+  margin: 1px auto;
+  max-width: 1201px;
+}
+.no-active-trades p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.cancel-trades-btn {
+    background-color: #d9534f; /* Красная кнопка */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.cancel-trades-btn:hover {
+    background-color: #c9302c;
+}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Kanit:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Kanit:wght@600&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Kanit:wght@600&display=swap');
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #f8f8f8;
+}
+
+header .logo {
+    margin: 0;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 600;
+}
+
+nav {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+    margin-right: 15px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: rgb(104, 102, 102);
+}
+
+.login-btn {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0px 4px 8px rgba(31, 198, 42, 0.25);
+    font-family: 'Inter', sans-serif;
+}
+
+.login-btn:hover {
+    background-color: #45a049;
+}
+
+main {
+    padding: 40px;
+    text-align: center;
+}
+
+.table-container {
+    margin: 0 auto;
+    max-width: 800px;
+    margin-top: 40px;
+}
+
+.table-title {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.trade-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #333;
+    color: white;
+}
+
+.trade-table th, .trade-table td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+}
+
+.trade-table th {
+    background-color: #444;
+    font-weight: bold;
+}
+
+.trade-table tr:nth-child(even) {
+    background-color: #444;
+}
+
+.trade-table tr:nth-child(odd) {
+    background-color: #333;
+}
+
+.trade-table tr:hover {
+    background-color: #555;
+}
+
+.trade-table td a {
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.trade-table td a:hover {
+    text-decoration: underline;
+}
+
+.accepted {
+    color: limegreen;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    color: rgb(0, 0, 0);
+    opacity: 0.9;
+    font-family: Roboto Flex, ui-sans-serif, system-ui, sans-serif, apple color emoji, segoe ui emoji, Segoe UI Symbol, noto color emoji;
+}
+
+footer nav {
+    margin-top: 10px;
+}
+
+footer nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: black;
+}
+
+.copyright-text {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    font-weight: 600;
+}
+
+.invaild {
+    color: rgb(255, 255, 255);
+}
+.Canceled {
+    color: rgb(255, 0, 0);
+}
+.online-container {
+    position: absolute;
+    top: 70px; /* Расстояние от верхнего края */
+    left: 20px; /* Расстояние от левого края */
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: 'Kanit', sans-serif;
+    box-shadow: 0 0 10px rgb(0, 0, 0);
+}
+/* Новый класс для контейнера с белым фоном и эффектом уменьшения */
+.custom-about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #fff; /* Белый фон для контейнера */
+    border-radius: 10px; /* Скругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    transition: transform 0.3s ease; /* Плавный переход для эффекта уменьшения */
+}
+
+/* Эффект уменьшения при наведении мыши */
+.custom-about-container:hover {
+    transform: scale(0.98); /* Немного уменьшить размер при наведении */
+}
+
+.custom-text-wrapper {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.custom-person-img img {
+    max-width: 100%;
+    border-radius: 10px;
+}
+.terms-section {
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+.terms-section h3 {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.terms-section p, .terms-section ul {
+    margin-bottom: 15px;
+    text-align: center;
+    width: 224%;
+}
+
+.terms-section ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+/* Основной стиль для контейнера заголовков */
+.header-container {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    margin: 20px auto;
+    text-align: center;
+    width: 224%;
+}
+
+/* Стили для заголовков h2 и h3 внутри контейнеров */
+.header-container h2 {
+    font-size: 2.5em;
+    color: #333;
+    border-bottom: 2px solid #e7e7e7;
+    padding-bottom: 10px;
+}
+
+.header-container h3 {
+    font-size: 1.8em;
+    color: #444;
+    border-bottom: 1px solid #e7e7e7;
+    padding-bottom: 8px;
+    background-color: #F5F5F5;
+    box-shadow: 0px 4px 8px rgba(18, 19, 18, 0.25);
+}
+
+/* Стили для раздела с условиями */
+.terms-section {
+    margin: 20px;
+}
+.text_ob {
+    font-family: 'Inter', sans-serif;
+}
+.footer-spacer {
+    height: 100px; /* Увеличьте значение при необходимости */
+}
+/* Кнопка "Create a ticket" */
+/* Кнопка "Create a ticket" */
+/* Контейнер для кнопки "Create a ticket" */
+.create-ticket-container {
+    position: relative; /* Устанавливаем относительное позиционирование для контейнера */
+    padding: 20px; /* Отступы от краев контейнера */
+    margin-top: 20px; /* Отступ от header */
+}
+
+/* Кнопка "Create a ticket" */
+.create-ticket-btn {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #494a4b;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 7px;
+    box-shadow: 0px 4px 8px rgb(0, 0, 0);
+}
+
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content {
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0 0 10px rgb(181, 238, 179);
+}
+
+.modal-header {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    padding: 6px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+    margin-bottom: 15px;
+    font-family: 'Kanit', sans-serif;
+}
+
+.send-btn {
+    background-color: #ffcc00;
+    color: black;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    width: 100%;
+}
+
+.send-btn:hover {
+    background-color: #e6b800;
+}
